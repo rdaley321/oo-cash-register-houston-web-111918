@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount, :items
+  attr_accessor :total, :discount, :items, :last
   
   
   
@@ -22,6 +22,10 @@ class CashRegister
       "There is no discount to apply."
     else
       "After the discount, the total comes to $#{self.total.to_i}."
+    end
+    
+    def void_last_transaction
+      
     end
     
   end
